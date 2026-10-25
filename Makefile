@@ -1,6 +1,10 @@
 install:
 	pip install --upgrade pip && pip install -r requirements.txt
 
+
+train:
+	python train_model.py --data ./data
+
 test:
 	python -m pytest -vv test_hello.py
 
