@@ -156,6 +156,7 @@ activemq-data/
 env/
 venv/
 ENV/
+Python-3.14.9
 env.bak/
 venv.bak/
 
