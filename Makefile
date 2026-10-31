@@ -1,12 +1,12 @@
 install:
 	pip install --upgrade pip && pip install -r requirements.txt
-
+	python -m textblob.download_corpora
 
 train:
 	python train_model.py --data ./data
 
 test:
-	python -m pytest -vv test_hello.py
+	python -m pytest -vv test_corenlp.py
 
 format:
 	black *.py
